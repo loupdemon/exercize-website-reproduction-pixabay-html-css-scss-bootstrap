@@ -1,0 +1,75 @@
+@use '../abstracts/variables'as *;
+
+@media (max-width: 1115px) {
+    nav {
+        padding: 0 0.5rem 0 1.25rem;
+    }
+
+    #nav-left-link-navigation {
+        display: none;
+    }
+
+    #nav-explore {
+        display: none;
+    }
+
+    #nav-hamburger-menu {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    #nav-upload {
+        display: none;
+    }
+
+    #hero {
+        height: 627px;
+    }
+
+    #img-container {
+        flex-direction: column;
+    }
+
+    .video-content {
+        display: none;
+    }
+
+    .img-content {
+        max-width: 100%;
+        width: 95%;
+        height: auto;
+    }
+}
+
+@media (max-width: 568px) {
+
+    .nav-hide-link {
+        display: none;
+    }
+
+    #nav-hamburger-menu {
+        border-left: 1px solid $hover-background;
+        padding-left: 0.5rem;
+    }
+
+    #hero {
+        background-image: $linear-gradient, url("https://cdn.pixabay.com/index/2022/01/24/14-13-20-660_640.jpg");
+    }
+}
+
+@media (max-width: 406px) {
+    #hero {
+        height: 699px;
+    }
+}
+
+@media (max-width: 330px) {
+    #hero {
+        height: 765px;
+    }
+
+    #hero-search-bar {
+        grid-template-columns: 15% 50% 35%;
+    }
+}

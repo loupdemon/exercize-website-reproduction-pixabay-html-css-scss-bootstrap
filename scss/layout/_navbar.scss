@@ -1,0 +1,63 @@
+@use '../abstracts/variables'as *;
+
+header {
+    max-width: 1830px;
+}
+
+#nav-wrapper {
+    height: 60px;
+}
+
+nav {
+    padding: 0 4.06rem;
+}
+
+#nav-logo {
+    width: 100px;
+    height: auto;
+}
+
+#nav-left {
+    gap: 60px;
+}
+
+#nav-left-link-navigation {
+    display: flex;
+    gap: 35px;
+}
+
+#nav-explore {
+    margin-right: 10px;
+}
+
+#nav-explore a {
+    gap: 8px;
+}
+
+.nav-hide-link {
+    display: flex;
+}
+
+.nav-hide-link a {
+    padding: 0 0.94rem;
+    height: 30px;
+
+    &:hover {
+        color: green;
+        text-decoration: underline;
+    }
+}
+
+#log-in {
+    border-right: 1px solid $hover-background;
+}
+
+.nav-hide-link:hover {
+    background-color: $hover-background;
+}
+
+#nav-hamburger-menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}

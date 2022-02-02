@@ -1,0 +1,267 @@
+@use '../abstracts/variables'as *;
+
+#img-section {
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+#img-container {
+    max-width: 1830px;
+    margin: 16px auto;
+    padding-right: 8px;
+}
+
+.img-content {
+    margin-left: 8px;
+    margin-bottom: 8px;
+    flex-shrink: 1;
+
+    img,
+    video {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.img-hover-container {
+    display: none;
+    padding: 1.063rem 1.25rem;
+    color: white;
+    font-size: 14px;
+    background: $linear-gradient;
+
+    a {
+        color: white;
+
+        &:hover {
+            background-color: lightgray;
+            cursor: pointer;
+        }
+    }
+}
+
+.img-hover-left {
+    gap: 13px;
+}
+
+.img-hover-right {
+    gap: 11px;
+}
+
+.img-hover-icon {
+    gap: 3px;
+    margin-top: 5px;
+
+    &:hover {
+        background-color: lightgray;
+        cursor: pointer;
+    }
+}
+
+.img-content:hover>.img-hover-container {
+    display: flex;
+}
+
+#image-1 {
+    flex-basis: 337.5px;
+    flex-grow: 1.5;
+    max-width: 510px;
+}
+
+#image-2 {
+    flex-basis: 150.038px;
+    flex-grow: 0.666833;
+    max-width: 340px;
+}
+
+#image-3 {
+    flex-basis: 158.989px;
+    flex-grow: 0.706617;
+    max-width: 340px;
+}
+
+#image-4 {
+    flex-basis: 337.5px;
+    flex-grow: 1.5;
+    max-width: 510px;
+}
+
+#image-5 {
+    flex-basis: 326.963px;
+    flex-grow: 1.45317;
+    max-width: 494.077px;
+}
+
+#image-6 {
+    flex-basis: 225px;
+    flex-grow: 1;
+    max-width: 340px;
+}
+
+#image-7 {
+    flex-basis: 337.5px;
+    flex-grow: 1.5;
+    max-width: 510px;
+}
+
+#image-8 {
+    flex-basis: 337.5px;
+    flex-grow: 1.5;
+    max-width: 510px;
+}
+
+#image-9 {
+    flex-basis: 337.331px;
+    flex-grow: 1.49925;
+    max-width: 509.745px;
+}
+
+#image-10 {
+    flex-basis: 337.5px;
+    flex-grow: 1.5;
+    max-width: 510px;
+}
+
+#image-11 {
+    flex-basis: 291.695px;
+    flex-grow: 1.29642;
+    max-width: 440.783px;
+}
+
+#image-12 {
+    flex-basis: 337.5px;
+    flex-grow: 1.5;
+    max-width: 510px;
+}
+
+#image-13 {
+    flex-basis: 355.458px;
+    flex-grow: 1.57981;
+    max-width: 537.137px;
+}
+
+#image-14 {
+    flex-basis: 337.5px;
+    flex-grow: 1.5;
+    max-width: 510px;
+}
+
+#image-15 {
+    flex-basis: 315.008px;
+    flex-grow: 1.40003;
+    max-width: 476.012px;
+}
+
+#image-16 {
+    flex-basis: 400px;
+    flex-grow: 1.77778;
+    max-width: 604.444px;
+}
+
+#image-17 {
+    flex-basis: 214.763px;
+    flex-grow: 0.954502;
+    max-width: 340px;
+}
+
+#image-18 {
+    flex-basis: 337.5px;
+    flex-grow: 1.5;
+    max-width: 510px;
+}
+
+#image-19 {
+    flex-basis: 337.5px;
+    flex-grow: 1.5;
+    max-width: 510px;
+}
+
+#image-20 {
+    flex-basis: 324.382px;
+    flex-grow: 1.4417;
+    max-width: 490.177px;
+}
+
+#image-21 {
+    flex-basis: 303.176px;
+    flex-grow: 1.34745;
+    max-width: 458.133px;
+}
+
+#image-22 {
+    flex-basis: 299.975px;
+    flex-grow: 1.33322;
+    max-width: 453.295px;
+}
+
+#image-23 {
+    flex-basis: 337.5px;
+    flex-grow: 1.5;
+    max-width: 510px;
+}
+
+#image-24 {
+    flex-basis: 168.766px;
+    flex-grow: 0.75007;
+    max-width: 340px;
+}
+
+#image-25 {
+    flex-basis: 150px;
+    flex-grow: 0.666667;
+    max-width: 340px;
+}
+
+#image-26 {
+    flex-basis: 337.5px;
+    flex-grow: 1.5;
+    max-width: 510px;
+}
+
+#image-27 {
+    flex-basis: 225px;
+    flex-grow: 1;
+    max-width: 240px;
+}
+
+#image-28 {
+    flex-basis: 337.5px;
+    flex-grow: 1.5;
+    max-width: 510px;
+}
+
+#image-29 {
+    flex-basis: 337.5px;
+    flex-grow: 1.5;
+    max-width: 510px;
+}
+
+#image-30 {
+    flex-basis: 322.074px;
+    flex-grow: 1.43144;
+    max-width: 486.689px;
+}
+
+#image-31 {
+    flex-basis: 400px;
+    flex-grow: 1.77778;
+    max-width: 604.444px;
+}
+
+#image-32 {
+    flex-basis: 337.5px;
+    flex-grow: 1.5;
+    max-width: 510px;
+}
+
+#image-33 {
+    flex-basis: 339.706px;
+    flex-grow: 1.5098;
+    max-width: 513.333px;
+}
+
+#image-34 {
+    flex-basis: 318.007px;
+    flex-grow: 1.41337;
+    max-width: 480.545px;
+}

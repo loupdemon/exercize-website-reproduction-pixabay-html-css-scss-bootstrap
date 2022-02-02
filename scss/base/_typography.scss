@@ -1,0 +1,55 @@
+@use '../abstracts/variables'as *;
+
+body {
+    font-family: Open Sans, Arial, system-ui;
+    line-height: 1.5;
+}
+
+nav a {
+    font-size: 14px;
+
+    &:hover {
+        color: $hover-color;
+    }
+}
+
+#hero-container h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 3rem;
+}
+
+#hero-container h2 {
+    margin: 25px 0;
+    font-size: 16px;
+}
+
+#hero-links {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+#hero a {
+    color: white;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+#hero-footer {
+    margin-top: 115px;
+    font-size: 14px;
+}
+
+.bottom-section h1 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.bottom-section p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 17px;
+}

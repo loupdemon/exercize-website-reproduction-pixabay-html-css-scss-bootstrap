@@ -1,0 +1,13 @@
+.bottom-section {
+    margin: 0 auto 73px auto;
+    max-width: 1024px;
+    line-height: 1.5;
+}
+
+.bottom-section p>a {
+    color: green;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

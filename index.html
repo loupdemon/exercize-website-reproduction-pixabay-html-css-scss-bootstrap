@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Giuseppe Marchesiello">
+    <meta name="description" content="Exercize HTML CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Exercize HTML CSS</title>
+</head>
+
+<body>
+    <header class="m-auto">
+        <div id="nav-wrapper">
+            <nav class="h-100 d-flex justify-content-between align-items-center">
+                <div id="nav-left" class="d-flex justify-content-between align-items-center">
+                    <div id="nav-logo">
+                        <a href="#">
+                            <svg viewBox="0 0 120 33" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                                <path
+                                    d="M9.059 7.279c4.417-.1 8.564 3.492 9.03 7.897.56 3.872-1.72 7.893-5.287 9.464-2.163 1.073-4.604.743-6.93.798H3.599v7.28H.002c.007-5.617-.014-11.234.01-16.85.12-4.186 3.545-7.932 7.682-8.49.45-.066.91-.1 1.365-.1v.001zm0 14.56c2.596.064 5.03-1.96 5.42-4.533.517-2.588-1.135-5.37-3.66-6.146-2.438-.866-5.372.272-6.564 2.575-.922 1.576-.594 3.434-.656 5.167v2.938h5.46v-.001zM19.826 7.191h3.557v18.16h-3.556V7.19l-.001.001zm14.25 11.42h.13l5.057 6.745h4.41l-6.874-9.34L42.895 7.2h-4.41l-4.28 6.225h-.128l-4.28-6.224h-4.41l6.095 8.818-6.873 9.336h4.41l5.057-6.744z"
+                                    fill="#333" fill-rule="nonzero"></path>
+                                <path
+                                    d="M51.735 7.191c3.603-.07 7.06 2.29 8.394 5.624.694 1.55.683 3.264.66 4.926v7.61c-3.21-.01-6.422.022-9.636-.018-3.688-.18-7.065-2.87-8.12-6.404-.97-3.07-.166-6.635 2.116-8.932 1.703-1.763 4.123-2.827 6.583-2.803l.003-.003zm5.46 14.56c-.015-2.02.033-4.04-.028-6.058-.212-2.705-2.718-4.972-5.432-4.9-2.582-.064-5.015 1.937-5.42 4.492-.472 2.454.937 5.126 3.276 6.04 1.442.628 3.035.367 4.56.423h3.045l-.001.003zM71.628 7.279c4.262-.104 8.245 3.25 8.924 7.445.77 3.98-1.476 8.278-5.182 9.916-3.62 1.71-8.275.607-10.764-2.523-1.542-1.817-2.208-4.235-2.077-6.59V0h3.6v7.28h5.5l-.001-.001zm0 14.56c2.733.073 5.23-2.223 5.433-4.942.34-2.702-1.662-5.42-4.337-5.912-1.48-.204-2.982-.065-4.472-.11h-2.124c.022 2.054-.05 4.11.042 6.158.286 2.71 2.735 4.856 5.46 4.8l-.002.006zM91.13 7.191c3.604-.07 7.06 2.29 8.394 5.624.696 1.55.686 3.264.664 4.926v7.61c-3.21-.01-6.424.022-9.636-.018-3.69-.18-7.067-2.87-8.124-6.404-.97-3.07-.165-6.635 2.117-8.932 1.702-1.762 4.122-2.826 6.582-2.803l.003-.003zm5.46 14.56c-.016-2.02.032-4.04-.027-6.058-.208-2.705-2.715-4.972-5.43-4.9-2.58-.064-5.014 1.937-5.417 4.492-.474 2.454.936 5.126 3.274 6.04 1.44.628 3.033.367 4.556.423h3.045l-.001.003zm23.407-14.517c-.007 5.605.015 11.208-.01 16.81-.13 4.41-3.922 8.374-8.345 8.604-.84.044-1.682.016-2.523.022v-3.598c1.536-.007 3.178.15 4.537-.72 1.7-.955 2.78-2.878 2.743-4.822-3.19 2.574-8.136 2.44-11.238-.214-2.262-1.825-3.497-4.76-3.323-7.65v-8.43h3.6c.016 3.205-.034 6.413.026 9.617.195 2.587 2.46 4.797 5.055 4.926 2.674.276 5.306-1.74 5.77-4.383.203-1.48.067-2.984.108-4.476V7.239h3.6v-.005z"
+                                    fill="#333" fill-rule="nonzero"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <ul id="nav-left-link-navigation" class="justify-content-between align-items-center">
+                        <li><a href="#">Photos</a></li>
+                        <li><a href="#">Illustrations</a></li>
+                        <li><a href="#">Vectors</a></li>
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="#">Music</a></li>
+                        <li><a href="#">Sound&nbsp;Effects</a></li>
+                    </ul>
+                </div>
+                <div id="nav-right" class="h-100">
+                    <ul id="nav-right-link-navigation" class="h-100 d-flex justify-content-end align-items-center">
+                        <li id="nav-explore">
+                            <a href="#" class="d-flex justify-content-between align-items-center">
+                                Explore
+                                <i class="bi bi-chevron-compact-down"></i>
+                            </a>
+                        </li>
+                        <li class="nav-hide-link align-items-center h-100">
+                            <a href="#" id="log-in" class="d-flex align-items-center">Log&nbsp;in</a>
+                        </li>
+                        <li class="nav-hide-link align-items-center h-100">
+                            <a href="#" class="d-flex align-items-center">Join</a>
+                        </li>
+                        <li id="nav-upload">
+                            <a href="#" class="d-flex justify-content-between align-items-center">
+                                <i class="bi bi-upload"></i>
+                                Upload
+                            </a>
+                        </li>
+                        <li id="nav-hamburger-menu">
+                            <i class="bi bi-list"></i>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="hero" class="w-100">
+            <div id="hero-container">
+                <h1>Stunning free images & royalty free stock</h1>
+                <h2>Over 2.5 million+ high quality stock images, videos and music shared by our talented community.</h2>
+                <div id="hero-search-bar" class="m-auto bg-white">
+                    <div id="search-icon"
+                        class="bg-transparent border-0 d-flex justify-content-center align-items-center">
+                        <i class="bi bi-search"></i>
+                    </div>
+                    <input type="text" name="search" placeholder="Search images, vectors, video and music"
+                        class="bg-transparent border-0">
+                    <button type="button"
+                        class="border-0 bg-transparent d-flex justify-content-evenly align-items-center">
+                        Images
+                        <i class="bi bi-chevron-compact-down"></i>
+                    </button>
+                </div>
+                <p id="hero-links">
+                    Popular Searches:
+                    <a href="#">nature,</a>
+                    <a href="#">wallpaper,</a>
+                    <a href="#">background,</a>
+                    <a href="#">love,</a>
+                    <a href="#">sky,</a>
+                    <a href="#">cat,</a>
+                    <a href="#">flowers,</a>
+                    <a href="#">dog,</a>
+                    <a href="#">flower,</a>
+                    <a href="#">money,</a>
+                    <a href="#">beach,</a>
+                    <a href="#">food,</a>
+                    <a href="#">coronavirus</a>
+                </p>
+                <div id="hero-footer">
+                    <a href="#">Free image by birgl</a>
+                </div>
+            </div>
+        </section>
+        <section id="img-section" class="d-flex flex-column justify-content-between align-items-center">
+            <div id="img-container" class="d-flex justify-content-start align-items-center flex-wrap">
+                <div id="image-1" class="img-content position-relative">
+                    <img src="https://cdn.pixabay.com/photo/2021/12/18/06/01/sunset-6878021__480.jpg">
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-2" class="img-content position-relative">
+                    <img src="https://cdn.pixabay.com/photo/2021/11/06/16/11/greece-6773683__340.jpg">
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-3" class="img-content position-relative">
+                    <img src="https://cdn.pixabay.com/photo/2021/09/13/08/18/blue-flower-6620619__340.jpg">
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-4" class="img-content position-relative">
+                    <img src="https://cdn.pixabay.com/photo/2022/01/19/00/36/sea-6948569__340.jpg">
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-5" class="img-content position-relative">
+                    <img src="https://cdn.pixabay.com/photo/2021/03/21/15/01/couple-6112296__340.jpg">
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-6" class="img-content position-relative">
+                    <img src="https://cdn.pixabay.com/photo/2021/03/14/11/14/fish-6093991__340.jpg">
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-7" class="img-content position-relative">
+                    <img src="https://cdn.pixabay.com/photo/2022/01/25/16/01/sky-6966721__340.jpg">
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-8" class="img-content position-relative">
+                    <img src="https://cdn.pixabay.com/photo/2022/01/07/07/13/chicago-6921297__340.jpg">
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-9" class="img-content position-relative">
+                    <img src="https://cdn.pixabay.com/photo/2022/01/19/19/41/san-francisco-6950837__340.jpg">
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-10" class="img-content position-relative">
+                    <img src="https://cdn.pixabay.com/photo/2022/01/17/06/38/altai-6943982__340.jpg">
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-11" class="img-content position-relative">
+                    <img src="https://cdn.pixabay.com/photo/2021/11/17/11/02/flowers-6803234__340.png">
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-12" class="img-content position-relative">
+                    <img src="https://cdn.pixabay.com/photo/2022/01/23/13/04/sparrow-6960807__340.jpg">
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-13" class="img-content position-relative">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/18/14/00/plants-1834749__340.jpg">
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-14" class="img-content position-relative">
+                    <img src="https://cdn.pixabay.com/photo/2022/01/21/07/21/ring-tailed-lemur-6954076__340.jpg">
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-15" class="img-content position-relative">
+                    <img src="https://cdn.pixabay.com/photo/2021/10/16/06/13/girl-6714026__340.jpg">
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-16" class="img-content video-content position-relative">
+                    <video
+                        src="https://player.vimeo.com/external/587646749.hd.mp4?s=cd8928bab78792f5dd05e680e2cc94b20b6e2f9d&profile_id=174"
+                        controls>
+                    </video>
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-17" class="img-content position-relative">
+                    <img src="https://cdn.pixabay.com/photo/2017/03/31/15/35/leaves-2191649__340.jpg">
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-18" class="img-content position-relative">
+                    <img src="https://cdn.pixabay.com/photo/2022/01/15/15/40/old-man-6939927__340.jpg">
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-19" class="img-content position-relative">
+                    <img src="https://cdn.pixabay.com/photo/2022/01/24/07/52/lizard-6962760__340.jpg">
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-20" class="img-content position-relative">
+                    <img src="https://cdn.pixabay.com/photo/2022/01/26/10/00/child-6968392__340.jpg">
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-21" class="img-content position-relative">
+                    <img src="https://cdn.pixabay.com/photo/2022/01/12/08/10/rose-stem-6932241__340.jpg">
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-22" class="img-content position-relative">
+                    <img src="https://cdn.pixabay.com/photo/2021/09/10/20/02/cats-6614088__340.jpg">
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-23" class="img-content position-relative">
+                    <img src="https://cdn.pixabay.com/photo/2022/01/13/10/39/animal-6934928__340.jpg">
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-24" class="img-content position-relative">
+                    <img src="https://cdn.pixabay.com/photo/2021/07/25/12/22/tourist-attraction-6491734__340.jpg">
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-25" class="img-content position-relative">
+                    <img src="https://cdn.pixabay.com/photo/2021/10/19/12/30/elephant-6723451__340.jpg">
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-26" class="img-content position-relative">
+                    <img src="https://cdn.pixabay.com/photo/2018/02/15/14/37/paper-3155438__340.jpg">
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-27" class="img-content position-relative">
+                    <img src="https://cdn.pixabay.com/photo/2020/10/07/17/22/women-5635784__340.png">
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-28" class="img-content position-relative">
+                    <img src="https://cdn.pixabay.com/photo/2022/01/20/17/51/office-desk-6952919__340.jpg">
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-29" class="img-content position-relative">
+                    <img src="https://cdn.pixabay.com/photo/2022/01/19/15/58/street-6950344__340.jpg">
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-30" class="img-content position-relative">
+                    <img src="https://cdn.pixabay.com/photo/2022/01/22/09/42/ride-6956675__340.jpg">
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-31" class="img-content video-content position-relative">
+                    <video
+                        src="https://player.vimeo.com/external/323496013.sd.mp4?s=934f61a0432ace6bcec62423e8a4282a4afb82ed&profile_id=164"
+                        controls>
+                    </video>
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-32" class="img-content position-relative">
+                    <img src="https://cdn.pixabay.com/photo/2022/01/19/09/17/squirrel-6949263__340.jpg">
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-33" class="img-content position-relative">
+                    <img src="https://cdn.pixabay.com/photo/2021/04/26/20/53/nature-6209977__340.jpg">
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="image-34" class="img-content position-relative">
+                    <img src="https://cdn.pixabay.com/photo/2022/01/04/18/47/oil-6915740__340.jpg">
+                    <div
+                        class="img-hover-container justify-content-between align-items-center position-absolute bottom-0 start-0 bg-transparent w-100 flex-wrap text-center">
+                        <div class="img-hover-left d-flex justify-content-between align-items-center">
+                            <a href="#">Link-1</a>
+                            <a href="#">Link-2</a>
+                            <a href="#">Link-3</a>
+                        </div>
+                        <div class="img-hover-right d-flex justify-content-between align-items-center">
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-heart-fill"></i>
+                                47
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-chat-fill"></i>
+                                12
+                            </div>
+                            <div class="img-hover-icon d-flex justify-content-between align-items-center">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><a href="#" class="pixabay-button">Discover more</a></div>
+        </section>
+        <section class="bottom-section d-flex justify-content-start align-items-center flex-column text-center">
+            <h1>Free images, videos and music you can use anywhere</h1>
+            <p>
+                Pixabay is a vibrant community of creatives, sharing copyright free images, videos and music.
+                All contents are released under the Pixabay License,
+                which makes them safe to use without asking for permission or giving credit to the artist -
+                even for commercial purposes.<br />
+                <a href="#">Learn more...</a>
+            </p>
+        </section>
+        <section class="bottom-section d-flex justify-content-start align-items-center flex-column text-center">
+            <h1>Join Pixabay</h1>
+            <p>
+                Download royalty free photos, videos and music.
+                Share your own pictures as public domain with people all over the world.
+            </p>
+            <a href="#" class="pixabay-button">Sign up, it's free!</a>
+        </section>
+    </main>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+@use '../abstracts/variables'as *;
+
+#hero {
+    height: 535px;
+    background-image: $linear-gradient, url("https://cdn.pixabay.com/index/2022/01/24/14-13-20-660_1920x550.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+}
+
+#hero-container {
+    padding: 149px 1rem 0 1rem;
+}
+
+#hero-search-bar {
+    display: grid;
+    grid-template-columns: 1fr 14fr 2fr;
+    grid-template-areas:
+        "lentis input button";
+    max-width: 800px;
+    height: 60px;
+    border-radius: 8px;
+
+    #search-icon {
+        grid-area: lentis;
+        color: rgb(178, 178, 178);
+    }
+
+    input {
+        grid-area: input;
+
+        &::placeholder {
+            color: rgba(174, 174, 178, 255);
+            font-size: 16px;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    button {
+        grid-area: button;
+        cursor: pointer;
+        color: $hover-color;
+        font-size: 13px;
+        gap: 10px;
+    }
+}
